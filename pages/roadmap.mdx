@@ -1,0 +1,53 @@
+import Image from 'next/image'
+import ImageWithModal from '/components/ImageWithModal'
+import swapmodulev2 from '/public/swapmodulev2.webp'
+import duedil from '/public/duedil.png'
+
+# Roadmap
+
+Planned features are listed in order of priority without a set release date.
+
+&nbsp;
+<div style={{ overflow: 'auto' }}>
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {[
+      { Item: 'UI revamp', Description: 'Complete rework of user interface to simplify access to features & modernize the trading experience.' },
+      { Item: 'Crosschain Swapping', Description: 'Transfer any asset between any of the 10 ecosystems MtopSwap is available on using our cross-chain swap powered by Li.Fi.' },
+      { Item: 'Enhanced wallet features', Description: 'Enhanced wallet connection options beyond Metamask, Improved chain selection, ENS domain recognition, & transaction history.' },
+      { Item: 'Meta-aggregator', Description: 'Aggregating aggregators to automatically give users best price of over 100,000 tokens (CoinGecko).' },
+      { Item: 'Whitelabeling', Description: 'Allows protocols to embed an MtopSwap widget & utilize our powerful tools.' },
+      { Item: 'Batch trading', Description: 'Select multiple DEXes or tokens & swap simultaneously.' },
+      { Item: 'Auto due diligence', Description: 'Enter the token contract address on any ecosystem & receive a myriad of holder, supply, explorer, charting, & social data.' },
+      { Item: 'Contract revocation', Description: 'Revoke previously approved smart contracts or disconnect from visited websites.' },
+      { Item: 'Honeypot detector', Description: 'Verify if a suspicious or new asset is a honeypot prior to swapping.' },
+      { Item: 'Token sniper', Description: 'Automatically buy or sell assets if they cross a customized threshold.' },
+      { Item: 'Trade alerts', Description: 'Toggleable alerts for high price impact trades on bookmarked tokens.' },
+      { Item: 'Portfolio manager', Description: 'View portfolio balances over time, bookmark your favorite projects and tokens, visualize your transaction history, & receive new pair notifications.' }
+    ].map(item => (
+      <tr key={item.Item}>
+        <td>{item.Item}</td>
+        <td>{item.Description}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</div>
+
+## Sneak Peaks
+
+### MtopSwap V2 User interface
+
+&nbsp;
+<ImageWithModal src={swapmodulev2} alt="MtopSwap V2 Swap Module"/>
+
+### Auto Due-Diligence Dashboard
+
+&nbsp;
+<ImageWithModal src={duedil} alt="Auto due diligence dashboard"/>

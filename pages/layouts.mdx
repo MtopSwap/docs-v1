@@ -1,0 +1,54 @@
+import Image from 'next/image'
+import ProjectDescriptionPic from '/images/project_description.gif'
+import ImageWithModal from '/components/ImageWithModal'
+import layouts from '/public/layouts.png'
+import sidebarbutton from '/public/sidebarbutton.webp'
+import { Callout } from 'nextra-theme-docs'
+
+
+# Token Layouts
+
+&nbsp;
+<ImageWithModal src={layouts} alt="MultiDEX Showcase"/>
+
+## Description
+
+Since our MultiDEX allows users to open an unlimited number of DEXes and tokens at the same time, having the ability to save and recall a given layout saves a massive amount of time. 
+
+Clicking the Layouts menu button in the upper-left side of the page will bring up a variety of options:
+
+&nbsp;
+<ImageWithModal src={sidebarbutton} alt="MultiDEX Screenshot" width={80}/>
+
+## Layout options
+
+&nbsp;
+<div style={{ overflow: 'auto' }}>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {[
+      { Name: 'Save As / Saved', Description: 'Save Module layouts and recall them later. Both the DEX & token pair chosen is saved and stored in browser cache.' },
+      { Name: 'Best Price', Description: 'Enter input & output token & open all DEXes the pair is on, sorted from best to worst price (output).' },
+      { Name: 'Arbitrage', Description: 'Similar to "Best Price", but only shows the best & worst price of a token pair.' },
+      { Name: 'All DEXes', Description: 'Open one instance of every supported DEX on the selected ecosystem.' }
+    ].map(item => (
+      <tr key={item.Item}>
+        <td>{item.Name}</td>
+        <td>{item.Description}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</div>
+
+## Video Tutorial
+&nbsp;
+<div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', display: 'flex', justifyContent: 'center' }}>
+  <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} src="https://odysee.com/$/embed/@MtopSwap:3/Layouts:7?r=HCtEHTzGKkFcenFE91GNqih9uLMB93Ug" title="Odysee video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+</div>

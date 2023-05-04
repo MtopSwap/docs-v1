@@ -1,0 +1,64 @@
+# Multisig Treasuries
+
+All multisig transactions need a 3 of 5 majority to pass.
+
+## Links
+&nbsp;
+
+<div style={{ overflow: 'auto' }}>
+<table>
+  <thead>
+    <tr>
+      <th>Ecosystem</th>
+      <th>Contract&nbsp;Address</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {[
+      { Ecosystem: 'Polygon (Primary)', ContractAddress: '0xf4F1E8950bc8aB6168C1c6151e27b5ceB2F76154', Link: 'https://gnosis-safe.io/app/matic:0xf4F1E8950bc8aB6168C1c6151e27b5ceB2F76154/balances' },
+      { Ecosystem: 'Harmony', ContractAddress: '0x85576752dA7CF103EcD297cc873A222DD727B470', Link: 'https://multisig.harmony.one/#/safes/0x85576752dA7CF103EcD297cc873A222DD727B470' },
+      { Ecosystem: 'Avalanche', ContractAddress: '0x2cfdb4B5c4F3BCDEa7BcCa0EfE7D6144974f2a32', Link: 'https://gnosis-safe.io/app/avax:0x2cfdb4B5c4F3BCDEa7BcCa0EfE7D6144974f2a32/balances' }
+
+    ].map(item => (
+      <tr key={item.Item}>
+        <td>{item.Ecosystem}</td>
+        <td>{item.ContractAddress}</td>
+        <td><a href="#">{item.Link}</a></td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+</div>
+
+## Signers
+&nbsp;
+
+<div style={{ overflow: 'auto' }}>
+    <table>
+    <thead>
+        <tr>
+        <th>Discord&nbsp;Username</th>
+        <th>Role</th>
+        <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        {[
+        { Discord: 'HarmonyWon#8073', Role: 'Founder & CEO', ContractAddress: '0x2291b0cB5d8542CF0B3C7FA2B130a1Cee1A99345' },
+        { Discord: 'Pioneer Emory#9504', Role: 'Business Development', ContractAddress: '0x75e00dB89FF5AaD7C0fE2A1A9542375be4481BE0' },
+        { Discord: '0xAlexander#2222', Role: 'Swiss Army Knife', ContractAddress: '0x8895aC80947C6FcA7009E4e71D70f7979015FC37' },
+        { Discord: 'sznal#6969', Role: 'Infrastructure Engineer', ContractAddress: '0x6bfB591d07Cf05152717b296398Ca0391E0b678B' },
+        { Discord: 'Paradox#0420', Role: 'Marketing', ContractAddress: '0x5FCC48A60e9DFE3bE9F6280b07752780a59e220D' }
+
+
+        ].map(item => (
+        <tr key={item.Item}>
+            <td>{item.Discord}</td>
+            <td>{item.Role}</td>
+            <td>{item.ContractAddress}</td>
+        </tr>
+        ))}
+    </tbody>
+    </table>
+</div>

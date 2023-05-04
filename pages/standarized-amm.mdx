@@ -1,0 +1,37 @@
+import Image from 'next/image'
+import ProjectDescriptionPic from '/images/project_description.gif'
+import ImageWithModal from '/components/ImageWithModal'
+import ammgraphic from '/public/ammgraphic.png'
+import { Callout } from 'nextra-theme-docs'
+
+
+# Standarized DEX Modules
+
+&nbsp;
+<ImageWithModal src={ProjectDescriptionPic} alt="Project Showcase"/>
+
+## Modules
+
+MtopSwap standardized the look and feel of hundreds of DEXes into one easy-to-understand interface (shown above), called a "Module".  This custom-built front-end has just a fraction of the code compared to other DEXes and is optimized for speed & end-user experience.
+
+## Features
+
+Each Module has all the features users are accustomed to:
+
+- Dropdown list of DEXes on current ecosystem
+- Token selection & import
+- Token amount allocation (25%, 50%, 75%, max)
+- Slippage customization
+- Price impact
+- Multihop toggle
+- Transaction detail information
+
+<Callout type="info" emoji="">
+Selecting "max" token allocation will leave an appropriate amount of native tokens in a user's wallet to avoid insufficient gas funds for future transactions.
+</Callout>
+
+## Video Tutorial
+&nbsp;
+<div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', display: 'flex', justifyContent: 'center' }}>
+  <iframe style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} src="https://odysee.com/$/embed/@MtopSwap:3/StandardizedAMM:4?r=HCtEHTzGKkFcenFE91GNqih9uLMB93Ug" title="Odysee video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+</div>

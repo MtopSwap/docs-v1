@@ -1,0 +1,51 @@
+{
+    "OVERVIEW": {
+        "type": "separator",
+        "title": "OVERVIEW"
+    },
+    "index": "Project Description",
+    "roadmap": "Roadmap",
+    "team": "Team",
+    
+    "RELEASED PRODUCTS": {
+        "type": "separator",
+        "title": "RELEASED PRODUCTS"
+    },
+    "standarized-amm": "Standarized DEX Modules",
+    "multidex": "MultiDEX",
+    "price-charts": "Price Charts",
+    "layouts": "Token Layouts",
+
+    "REFERENCE": {
+    "type": "separator",
+    "title": "REFERENCE"
+  },
+  "multisig": "Multi-sig Treasuries",
+  "smart-contracts": "Smart Contracts",
+  "links": "Links",
+  "discord": "Discord",
+    "Home": {
+        "title": "Home",
+        "type": "page",
+        "href": "https://app.mtopswap.com/",
+        "newWindow": true
+      },
+      "MetaDEX": {
+        "title": "App",
+        "type": "page",
+        "href": "https://app.mtopswap.com/multidex/",
+        "newWindow": true
+      },
+      "Twitter": {
+        "title": "Twitter",
+        "type": "page",
+        "href": "https://twitter.com/mtopswap",
+        "newWindow": true
+      },
+      "Linktree": {
+        "title": "LinkTree",
+        "type": "page",
+        "href": "https://linktr.ee/mtopswap",
+        "newWindow": true
+      }
+  }

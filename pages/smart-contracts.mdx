@@ -1,0 +1,179 @@
+import { Callout } from 'nextra-theme-docs'
+import { Card, Cards } from 'nextra-theme-docs'
+import { Tab, Tabs } from 'nextra-theme-docs'
+
+# Smart Contracts
+
+## Introduction
+
+MtopSwap has deployed several Intermediary smart contracts to enable it's scope. Intermediary contracts are a vital component in the world of decentralized finance (DeFi) as they serve as a link between different systems, enabling interoperability. These contracts are meticulously designed, audited and thoroughly verified to ensure that they function seamlessly & securely.
+
+In the case of MtopSwap, the intermediary contracts provide a secure interface between the DEX's router and the MtopSwap platform, facilitating seamless swaps on more than 30 DEXs and across 10 different EVM chains. This integration allows us to track swaps that originate from MtopSwap, ensuring transparency and accountability in the transaction process.
+
+Furthermore, the intermediary contracts allow MtopSwap to charge a nominal transaction fee of 0.25%, which is a small price to pay for the convenience and security offered by the platform. This fee is utilized to maintain and improve the platform's performance, ensuring that users can continue to enjoy a seamless and hassle-free experience while transacting on MtopSwap.
+
+## Address Table
+
+<Tabs items={['Operational', 'Ethereum', 'Arbitrum', 'Avalanche', 'Polygon', 'Optimism', 'Binance Smart Chain', 'Fantom', 'Aurora', 'Cronos', 'Harmony']}>
+  <Tab>
+    Owner 
+    ```js copy
+    0x773aa2613C3851240dEf095F4E21Bde464ECB623
+    ```
+    Fee Receiver 
+    ```js copy
+    0xc4f9da423abc6927997838153ea18f1abf9d5a98
+    ```
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://etherscan.io/address/0xA4A27bc79aA0ca4422B006a7bAFd24d30CF1fC90#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://arbiscan.io/address/0xCa6cDA500C198Bcf267165443aB8316A84FbeE71#code' },
+          { type: 'Intermediary / LB', address: 'https://arbiscan.io/address/0x556f3EdE47Ca29CCe7bac1f3eA9C1A5679C33c7C#code' },
+          { type: 'Intermediary / CMLT', address: 'https://arbiscan.io/address/0xD940B6Af005662d526cA9020B26252475CABf868#code' },
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://snowtrace.io/address/0x43a7eca60d12b3d289e1290ad638b45dbfa7181f#code' },
+          { type: 'Intermediary / LB', address: 'https://snowtrace.io/address/0x950100D75f0308fBd0953f25C6b108238e11321f#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://polygonscan.com/address/0xbca721BF74AD68F9afA35DCA0D123A758422ae28#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://optimistic.etherscan.io/address/0x43a7ECA60d12B3d289e1290Ad638b45dBfA7181f#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://bscscan.com/address/0x950100D75f0308fBd0953f25C6b108238e11321f#code' },
+          { type: 'Intermediary / LB', address: 'https://bscscan.com/address/0xA4A27bc79aA0ca4422B006a7bAFd24d30CF1fC90#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://ftmscan.com/address/0x950100D75f0308fBd0953f25C6b108238e11321f#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://explorer.aurora.dev/address/0x950100D75f0308fBd0953f25C6b108238e11321f/contracts#address-tabs' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://cronoscan.com/address/0x950100D75f0308fBd0953f25C6b108238e11321f#code' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+  <Tab>
+    <table>
+      <tbody>
+        {[
+          { type: 'Intermediary / V2', address: 'https://explorer.harmony.one/address/0xa4ceba5c16a95823fc6d836f0918745fdb6f5b23?activeTab=7' }
+        ].map(item => (
+          <tr key={item.type}>
+            <td>{item.type}</td>
+            <td><a href={item.address}>{item.address}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </Tab>
+</Tabs>
+
+### Abbreviations
+- Owner: The address that creates, deploys, and manages a smart contract on a blockchain network.
+- Fee Receiver: The address that receives fees or charges for services rendered or transactions processed.
+- V2: Typical Uniswap V2 type of contract. Interoperable with all Uniswap V2 forks, including Sushiswap, Pancake Swap & more.
+- LB: Trader Joe's Liquidity Book AMM type of contract.
+- CMLT: Camelot Exchange type of contract.
