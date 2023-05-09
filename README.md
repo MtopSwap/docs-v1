@@ -1,10 +1,10 @@
 # MtopSwap Documentation Deployment 
 
-This is a preliminary deployment for creating documentation for Docs.MtopSwap.com utilizing the [Nextra Documentation Builder](https://nextra.site).
+This is the final deployment for migrating documentation to docs.mtopswap.com, utilizing the [Nextra Documentation Builder](https://nextra.site).
 
 [**Live Demo →**](https://mtop-documentation.vercel.app/)
 
-[![](.github/screenshot1.png)](https://mtop-documentation.vercel.app/)
+[![](public/screenshot.png)](https://mtop-documentation.vercel.app/)
 
 ## Local Development
 
