@@ -2,9 +2,9 @@
 
 This is the final deployment for migrating documentation to docs.mtopswap.com, utilizing the [Nextra Documentation Builder](https://nextra.site).
 
-[**Live Demo →**](https://mtop-documentation.vercel.app/)
+[** Deployment Link →**](https://docs.mtopswap.com/)
 
-[![](public/screenshot.png)](https://mtop-documentation.vercel.app/)
+[![](public/screenshot.PNG)](https://mtop-documentation.vercel.app/)
 
 ## Local Development
 
